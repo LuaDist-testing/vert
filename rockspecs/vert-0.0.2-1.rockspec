@@ -1,18 +1,10 @@
--- This file was automatically generated for the LuaDist project.
+package = "Vert"
 
-package = "vert"
+version = "0.0.2-1"
 
-version = "0.0.1-1"
-
--- LuaDist source
-source = {
-  tag = "0.0.1-1",
-  url = "git://github.com/LuaDist-testing/vert.git"
-}
--- Original source
--- source = { url = "git://github.com/aconbere/vert.git"
---          , tag = "v0.0.1"
---          }
+source = { url = "git://github.com/aconbere/vert.git"
+         , tag = "v0.0.2"
+         }
 
 description = { summary = "Creates isolated development environment"
               , detailed = [[
@@ -30,8 +22,10 @@ dependencies = { "lua == 5.1"
                }
 
 build = { type = "builtin"
-        , modules = { vert = "./src/vert.lua" 
+        , modules = { vert    = "./src/vert.lua" 
                     , optimal = "./src/optimal.lua"
+                    , utils   = "./src/utils.lua"
                     }
         , install = { bin = { vert = "src/vert.lua" } }
         }
+
