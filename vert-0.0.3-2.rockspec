@@ -2,11 +2,11 @@
 
 package = "vert"
 
-version = "0.0.3-1"
+version = "0.0.3-2"
 
 -- LuaDist source
 source = {
-  tag = "0.0.3-1",
+  tag = "0.0.3-2",
   url = "git://github.com/LuaDist-testing/vert.git"
 }
 -- Original source
@@ -17,14 +17,14 @@ source = {
 description = { summary = "Creates isolated development environment"
               , detailed = [[
                   Vert is a tool for building isolated development environments akin to
-                  VirtualEnv in Python. It handles compiling and installing Lua to a local
-                  directory as well as setting up LuaRocks.
+                  virtualenv in python. It handles compiling and install lua to a local
+                  directory as well as setting up luarocks.
                 ]]
               , license = "MIT/X11"
               , maintainer = "Anders Conbere <aconbere@gmail.com>"
               }
 
-dependencies = { "lua == 5.1"
+dependencies = { "lua >= 5.1"
                , "luafilesystem"
                , "luasocket"
                }
